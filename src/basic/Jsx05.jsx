@@ -1,20 +1,17 @@
-
 import React from 'react';
+import PassComponent from './PassComponent';
+import NotPassComponent from './NotPassComponent';
+import LuckyComponent from './LuckyComponent';
+import UnLuckyComponent from './UnLuckyComponent';
 
 const Jsx05 = () => {
-    const age = 15;
-    const [pass,notPass,lucky, unLucky] = ["입장 가능","입장 불가","당첨","꽝"]
-    
-    const passComponent = (<div>{pass}</div>);
-    const notPassComponent = (<div>{notPass}</div>);
-    const luckyComponent = (<div>{lucky}</div>);
-    const unLuckyComponent = (<div>{unLucky}</div>);
+    const age = 20;
 
     const isAdult =  age >= 19;
     const isEven = age%2 === 0;
 
-    const enter = isAdult ? passComponent : notPassComponent;
-    const win = isEven ? luckyComponent : unLuckyComponent;
+    const enter = isAdult ? <PassComponent /> : <NotPassComponent/>;
+    const win = isEven ? <LuckyComponent/> : <UnLuckyComponent/>;
 
     return (
         <div>
