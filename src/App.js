@@ -3,7 +3,8 @@ import './App.css';
 // import Jsx02 from './basic/Jsx02';
 // import Jsx03 from './basic/Jsx03';
 //import Jsx04 from './basic/Jsx04';
-import Jsx05 from './basic/Jsx05';
+//import Jsx05 from './basic/Jsx05';
+import Container from './props/Container';
 // import {Jsx05} from './basic/Jsx05''
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     {/*<Jsx02 />*/}
     {/* <Jsx03/> */}
     {/* <Jsx04/> */}
-    <Jsx05/>
+    {/* <Jsx05/> */}
+    <Container />
+  
     </>
 
   );
